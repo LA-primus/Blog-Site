@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Post</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <%- include("partials/header.ejs")%>
+    <div class="container">
+    <form id="updateForm" method="post">
+      <label for="new-post">Make your changes:</label><br />
+      <textarea name="newPost" id="newPost" rows="6" cols="50"><%=postText%></textarea
+      ><br />
+      <input id="editPost" type="submit" value="EDIT" formaction="/edit-post/<%=postID%>">
+      <a href="/posts">CANCEL</a>
+    </form>
+  </div>
+  </body>
+</html>

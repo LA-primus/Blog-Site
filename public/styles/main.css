@@ -1,0 +1,37 @@
+:root{
+    --white-color: white;
+    --blue-color: rgb(32, 151, 206);
+    --black-color: var(--black-color);
+}
+input[type=submit],a{
+    display: inline-block;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    margin: 8px 10px;
+    margin-left: 0px;
+    border-radius: 4px;
+    border: none;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.header-link{
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+.header-title,.post-identifier{
+    color: var(--blue-color);
+}
+.header-container{
+    position: fixed;
+    width: 100% ;
+    z-index: 1000;
+    top: 0;
+    left: 30px;
+    background-color: var(--white-color);
+}
+div.container{
+    margin-top: 100px;
+}
